@@ -1,19 +1,33 @@
-(function() {
-    var coreSocialistValues = ["富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善"],
-    index = Math.floor(Math.random() * coreSocialistValues.length);
-	
-    document.body.addEventListener('click',
-    function(e) {
-	//过滤a标签
-        if (e.target.tagName == 'A') {
-            return;
-        }
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array
+        ("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+        var $i = $("<span/>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
         var x = e.pageX,
-        y = e.pageY,
-        span = document.createElement('span');
-        span.textContent = coreSocialistValues[index];
-        index = (index + 1) % coreSocialistValues.length;
-        span.style.cssText = ['z-index: 9999999; position: absolute; font-weight: bold; color: #ff6651; top: ', y - 20, 'px; left: ', x, 'px;'].join('');
-        document.body.appendChild(span);
-        animate(span);
+        y = e.pageY;
+        $i.css({
+            "z-index": 5,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+			3000,
+			function() {
+			    $i.remove();
+			});
     });
+    setTimeout('delay()', 2000);
+});
+
+function delay() {
+    $(".buryit").removeAttr("onclick");
+}
