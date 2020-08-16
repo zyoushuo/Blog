@@ -183,10 +183,8 @@
 	-ms-transform: translate(-100%, 0);
 	transform: translate(-100%, 0)
 }
-#loader.loading .loader_overlay{
-	display: none
-}
-#loader.loading .loader_cogs{
+
+#loader{
 	display: none
 }
 /* Animations */
