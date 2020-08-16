@@ -1,29 +1,10 @@
-@charset "utf-8";
-
-/*主要CSS*/
-body { height: 100vh; font-family: "微软雅黑"; text-align: center; overflow: hidden; }
-body h1 {
-  text-transform: uppercase;
-  font-size: 30px;
-  color: #576e81;
-  margin: 30px 0px 0px 0px;
-}
-body h2 {
-  font-weight: normal;
-  font-size: 18px;
-  color: #F98DB9;
-  margin: 10px 0px 0px 0px;
-}
-body p {
-  margin: 0 auto;
-}
-body .loader {
+.loader {
   height: 250px;
   margin: auto;
   width: 400px;
   z-index:10;
 }
-body .loader_overlay {
+.loader_overlay {
   width: 150px;
   height: 150px;
   background: transparent;
@@ -37,7 +18,7 @@ body .loader_overlay {
   bottom: 0;
   margin: auto;
 }
-body .loader_cogs {
+.loader_cogs {
   z-index: -2;
   width: 100px;
   height: 100px;
@@ -49,7 +30,7 @@ body .loader_cogs {
   bottom: 0;
   margin: auto;
 }
-body .loader_cogs__top {
+.loader_cogs__top {
   position: relative;
   width: 100px;
   height: 100px;
@@ -58,26 +39,26 @@ body .loader_cogs__top {
   -webkit-animation: rotate 10s infinite linear;
           animation: rotate 10s infinite linear;
 }
-body .loader_cogs__top div:nth-of-type(1) {
+.loader_cogs__top div:nth-of-type(1) {
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
-body .loader_cogs__top div:nth-of-type(2) {
+.loader_cogs__top div:nth-of-type(2) {
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
 }
-body .loader_cogs__top div:nth-of-type(3) {
+.loader_cogs__top div:nth-of-type(3) {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-body .loader_cogs__top div.top_part {
+.loader_cogs__top div.top_part {
   width: 100px;
   border-radius: 10px;
   position: absolute;
   height: 100px;
   background: #f98db9;
 }
-body .loader_cogs__top div.top_hole {
+.loader_cogs__top div.top_hole {
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -90,7 +71,7 @@ body .loader_cogs__top div.top_hole {
   bottom: 0;
   margin: auto;
 }
-body .loader_cogs__left {
+.loader_cogs__left {
   position: relative;
   width: 80px;
   -webkit-transform: rotate(16deg);
@@ -103,26 +84,26 @@ body .loader_cogs__left {
   left: -24px;
   height: 80px;
 }
-body .loader_cogs__left div:nth-of-type(1) {
+.loader_cogs__left div:nth-of-type(1) {
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
-body .loader_cogs__left div:nth-of-type(2) {
+.loader_cogs__left div:nth-of-type(2) {
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
 }
-body .loader_cogs__left div:nth-of-type(3) {
+.loader_cogs__left div:nth-of-type(3) {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-body .loader_cogs__left div.left_part {
+.loader_cogs__left div.left_part {
   width: 80px;
   border-radius: 6px;
   position: absolute;
   height: 80px;
   background: #97ddff;
 }
-body .loader_cogs__left div.left_hole {
+.loader_cogs__left div.left_hole {
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -135,7 +116,7 @@ body .loader_cogs__left div.left_hole {
   bottom: 0;
   margin: auto;
 }
-body .loader_cogs__bottom {
+.loader_cogs__bottom {
   position: relative;
   width: 60px;
   top: -65px;
@@ -148,26 +129,26 @@ body .loader_cogs__bottom {
   left: 79px;
   height: 60px;
 }
-body .loader_cogs__bottom div:nth-of-type(1) {
+.loader_cogs__bottom div:nth-of-type(1) {
   -webkit-transform: rotate(30deg);
           transform: rotate(30deg);
 }
-body .loader_cogs__bottom div:nth-of-type(2) {
+.loader_cogs__bottom div:nth-of-type(2) {
   -webkit-transform: rotate(60deg);
           transform: rotate(60deg);
 }
-body .loader_cogs__bottom div:nth-of-type(3) {
+.loader_cogs__bottom div:nth-of-type(3) {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-body .loader_cogs__bottom div.bottom_part {
+.loader_cogs__bottom div.bottom_part {
   width: 60px;
   border-radius: 5px;
   position: absolute;
   height: 60px;
   background: #ffcd66;
 }
-body .loader_cogs__bottom div.bottom_hole {
+.loader_cogs__bottom div.bottom_hole {
   width: 30px;
   height: 30px;
   border-radius: 100%;
