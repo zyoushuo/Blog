@@ -1,8 +1,8 @@
 #loader {
-  height: 250px;
+  /*height: 250px;
   margin: auto;
   width: 400px;
-  z-index:10;
+  z-index:10;*/
 }
 .loader_overlay {
   width: 150px;
@@ -162,7 +162,7 @@
   margin: auto;
 }
 
-#loader.loader .loader_cogs__top{
+/*#loader.loader .loader_cogs__top{
 	-webkit-transform: translate(-100%, 0);
 	-moz-transform: translate(-100%, 0);
 	-o-transform: translate(-100%, 0);
@@ -182,9 +182,11 @@
 	-o-transform: translate(-100%, 0);
 	-ms-transform: translate(-100%, 0);
 	transform: translate(-100%, 0)
+}*/
+#loader.loading .loader_overlay{
+	display:none;
 }
-
-#loader{
+#loader.loading .loader_cogs{
 	display: none
 }
 /* Animations */
