@@ -1,6 +1,5 @@
 
 .main-content {
-  margin: 5em auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -9,12 +8,12 @@
 }
 
 .moleskine-wrapper {
-  max-width: calc(100% / 4);
+  max-width: calc(100% / 5);
   min-width: 10em;
 }
 
 .moleskine-notebook {
-  height: 250px;
+  height: 200px;
   width: 175px;
   position: relative;
   transition: .4s ease-in-out;
@@ -35,8 +34,8 @@
 
 .notebook-cover {
   background: #cc4b48;
-  height: 250px;
-  width: 175px;
+  height: 200px;
+  width: 145px;
   position: absolute;
   border-radius: 5px 15px 15px 5px;
   z-index: 10;
@@ -80,7 +79,7 @@
   height: 50px;
   background: #e8e8e0;
   margin-top: 80px;
-  padding: 15px;
+  padding: 5px 0 0 40px;
   font-size: 12px;
   position: relative;
   z-index: 10;
@@ -100,7 +99,7 @@
 
 .notebook-page {
   height: 100%;
-  width: 175px;
+  width: 145px;
   position: absolute;
   background-color: #fbfae8;
   z-index: 0;
