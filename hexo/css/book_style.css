@@ -20,7 +20,7 @@
   border-radius: 5px 15px 15px 5px;
   transform-origin: left center 0px;
   display: inline-block;
-  margin: 30px;
+  margin: 30px 0;
   perspective: 800px;
 }
 .moleskine-notebook:hover {
