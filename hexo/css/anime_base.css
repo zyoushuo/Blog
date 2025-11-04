@@ -1,22 +1,28 @@
+svg.shapes {
+  position: absolute;
+  top: -170px;
+}
+
 /* Slideshow */
 .slideshow {
-	position: absolute;
-	top: 0;
-	left: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
 
 .slide {
-	position: absolute;
-	width: 100vw;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	pointer-events: none;
-	opacity: 0;
-	z-index: 1;
+  width: auto;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
 }
 
 .slide--current {
@@ -67,6 +73,7 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 9vw;
+	color: #fff;
 }
 
 
@@ -75,4 +82,5 @@
 	top: 0;
 	left: 0;
 }
+
 
