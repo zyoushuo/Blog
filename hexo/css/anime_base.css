@@ -1,0 +1,78 @@
+/* Slideshow */
+.slideshow {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slide {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	pointer-events: none;
+	opacity: 0;
+	z-index: 1;
+}
+
+.slide--current {
+	opacity: 1;
+	pointer-events: auto;
+	z-index: 100;
+}
+
+.slide__bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.slide__bg--1 {
+	background: var(--color-bg-slide-1);
+}
+
+
+
+/* Word + SVG styles */
+.word {
+	position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 0.25em 0;
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    grid-area: title;
+    font-size: 10vw;
+    font-weight: 400;
+}
+
+
+
+.word--1 {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9vw;
+}
+
+
+.shapes {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
